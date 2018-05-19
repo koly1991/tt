@@ -1,0 +1,3 @@
+*.tex filter=git-crypt diff=git-crypt
+*.bib filter=git-crypt diff=git-crypt
+*.list filter=git-crypt diff=git-crypt
