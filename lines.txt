@@ -1,0 +1,4 @@
+read; cd /tmp/r; HOME=$(mktemp -d); gpg --import /tmp/secring.gpg ; gpg --edit victor; git init; git config user.email victor.hdez.barrios@gmail.com; git config user.name victor; echo "*.tex filter=git-crypt diff=git-crypt" >> .gitattributes; echo "*.bib filter=git-crypt diff=git-crypt" >> .gitattributes; echo "*.list filter=git-crypt diff=git-crypt" >> .gitattributes; git-crypt init; git-crypt add-gpg-user victor; git-crypt status -f; git add .; git commit; git status; git-crypt lock;
+cp -vr /media/111/root/fme/mamme/TFM/tfm /tmp/r; cd /tmp/r; rm -rf .git; cp header.tex header2.tex; mv header2.tex header.tex; cp biblio.bib biblio2.bib; mv biblio2.bib biblio.bib;
+HOME=$(mktemp -d); gpg --gen-key ; cp /tmp/tmp.bWZ8tEgh63/.gnupg/secring.gpg /tmp/
+
