@@ -1,5 +1,5 @@
 #!/usr/bin/zsh
-if [ ! -z $1 ] && [ ! -z $2 ]; then
+if [ ! -z $1 ] && [ ! -z $2 ] && [ ! -z $3 ]; then
 	while [ ! -e /tmp/.stopautocommit ]; do
 		if ! git status | grep "nothing to commit, working tree clean" &> /dev/null ; then
 			git status
