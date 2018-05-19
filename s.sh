@@ -1,5 +1,5 @@
 #!/bin/bash
-if [ ! -z $1 ] && [ ! -z $2 ] && [ ! -z $3] ; then
+if [ ! -z $1 ] && [ ! -z $2 ] && [ ! -z $3 ] ; then
 	dir=$(mktemp -d)
 	HOME=$dir
 	git config user.email $1
