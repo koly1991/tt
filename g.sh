@@ -9,7 +9,7 @@ if [ ! -z $1 ] && [ ! -z $2 ] && [ ! -z $3 ]; then
 			git status
 			date
 		fi
-		sleep 3
+		sleep 0.5
 	done
 else
 	echo first argument is username, second one is password, third is repo name
