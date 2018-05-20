@@ -18,7 +18,7 @@ hash=$(sha1sum $(find | grep tex | grep -v swp | grep -v swo) | sha1sum)
 oldhash=$hash
 while true; do 
 	while [ $oldhash = $hash ]; do
-		sleep 0.5
+		sleep 0.1
 		hash=$(sha1sum $(find | grep tex | grep -v swp | grep -v swo) | sha1sum)
 	done
 	compilelatex
