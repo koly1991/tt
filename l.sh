@@ -13,7 +13,7 @@ compilelatex(){
 	rm -rf $dir
 }
 compilelatex
-hash=$(sha1sum $(find | grep tex) | sha1sum)
+hash=$(sha1sum $(find | grep tex | grep -v swp | grep -v swo) | sha1sum)
 oldhash=$hash
 while true; do 
 	while [ $oldhash = $hash ]; do
