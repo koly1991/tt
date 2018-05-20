@@ -1,5 +1,6 @@
 #!/usr/bin/zsh
 dir=$(mktemp -d)
+cp pdfs.list $dir
 cd $dir
 for i in $(cat pdfs.list); do
 	wget $i &
