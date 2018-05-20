@@ -6,6 +6,6 @@ for i in $(cat pdfs.list); do
 	wget $i &
 done
 wait
-( zathura * /tmp/main.pdf
+(zathura * /tmp/main.pdf
 cd -
 rm -rf $dir) &
