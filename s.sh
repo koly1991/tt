@@ -8,7 +8,7 @@ if [ ! -z $1 ] && [ ! -z $2 ] && [ ! -z $3 ] ; then
 	gpg --import $3
 	gpg --edit $2
 	git-crypt unlock
-	zathura $(cat pdfs.list) /tmp/main.pdf &> /dev/null &
+	p.sh
 	#if ! chromium $(cat pdfs.list) /tmp/main.pdf &> /dev/null ; then
 	#	chromium-browser $(cat pdfs.list) /tmp/main.pdf &> /dev/null
 	#fi &
