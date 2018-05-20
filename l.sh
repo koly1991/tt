@@ -11,6 +11,7 @@ compilelatex(){
 	cp *.pdf /tmp/main.pdf
 	cd -
 	rm -rf $dir
+	cp /tmp/main.pdf .
 }
 compilelatex
 hash=$(sha1sum $(find | grep tex | grep -v swp | grep -v swo) | sha1sum)
