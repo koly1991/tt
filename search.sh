@@ -4,6 +4,9 @@ if [ ! -z $1 ]; then
 		echo $i
 		cat $i | grep --color -B 3 -A 3 "$1"
 		read
+		if [ $2 = "edit" ]; then
+			vim $i
+		fi
 		clear
        	done
 fi
