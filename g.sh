@@ -4,12 +4,14 @@ if [ ! -z $1 ] && [ ! -z $2 ] && [ ! -z $3 ]; then
 		if ! git status | grep "nothing to commit, working tree clean" &> /dev/null ; then
 			git status
 			git add .
+			git status
 			git commit -m "autocommit of $(date)"
+			git status
 			git push https://$1:$2@github.com/$1/$3
 			git status
 			date
 		fi
-		timeout 300 ./read.sh
+		sleep 300
 	done
 else
 	echo first argument is username, second one is password, third is repo name
