@@ -3,10 +3,10 @@ compilelatex(){
 	dir=$(mktemp -d)
 	cp -vr . $dir
 	cd $dir
-	timeout 2 pdflatex main.tex
-	timeout 2 bibtex main.aux
-	timeout 2 pdflatex main.tex
-	timeout 2 pdflatex main.tex
+	timeout 5 pdflatex main.tex
+	timeout 5 bibtex main.aux
+	timeout 5 pdflatex main.tex
+	timeout 5 pdflatex main.tex
 	rm /tmp/main.pdf
 	cp *.pdf /tmp/main.pdf
 	cd -
