@@ -2,4 +2,3 @@
 *.bib filter=git-crypt diff=git-crypt
 *.list filter=git-crypt diff=git-crypt
 *.swp filter=git-crypt diff=git-crypt
-*.pdf filter=git-crypt diff=git-crypt
