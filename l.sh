@@ -9,6 +9,7 @@ compilelatex(){
 	timeout 5 pdflatex main.tex
 	rm /tmp/main.pdf
 	cp *.pdf /tmp/main.pdf
+	cp /tmp/main.pdf /tmp/tt
 	cd -
 	rm -rf $dir
 }
